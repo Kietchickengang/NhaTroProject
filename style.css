@@ -1,0 +1,495 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+.hero {
+  background: linear-gradient(to right, #1976d2, #64b5f6);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta {
+  display: inline-block;
+  padding: 12px 24px;
+  background: white;
+  color: #33FF99;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.cta:hover {
+  background: #CCFFFF;
+}
+
+/* Section */
+section {
+  padding: 50px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #1976d2;
+}
+
+/* About */
+.about p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  padding-left: 20px;
+  position: relative;
+}
+.tick-icon {
+  color: green;
+  margin-right: 10px;
+}
+
+
+/* Room */
+.room-title {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #1976d2;
+  margin-bottom: 15px;
+}
+
+.room-title2 {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #19d27c;
+  margin-bottom: 15px;
+  font-weight:bold;
+}
+
+
+.room-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  gap: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+}
+
+.room-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.room-image img {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.room-features {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.room-features li {
+  display: flex;
+  justify-content: space-between; /* Đẩy tick sang bên phải */
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 6px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.room-features i {
+  margin-right: 10px;
+  color: #0099ff;
+}
+
+.feature-text {
+  flex: 1;
+}
+
+.tick {
+  color: green;
+  font-size: 1.1rem;
+}
+
+
+.room-card li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #C0C0C0;
+  padding: 5px 10px;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.feature-text {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.tick {
+  color: green;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+/* Location */
+.location iframe {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Contact */
+.contact p {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.contact i {
+  color: #1976d2;
+  font-size: 18px;
+}
+
+.highlight-info {
+  color: #3498db;
+  font-weight: bold;
+}
+
+
+/* Footer */
+footer {
+  background: #0d59a4;
+  color: white;
+  display: flex;
+  justify-content: center; /* căn giữa ngang */
+  align-items: center;     /* căn giữa dọc */
+  height: 30px;            /* chiều cao tùy bạn */
+  margin-top: 40px;
+}
+
+
+/* Responsive */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .cta {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 30px 15px;
+  }
+
+  .room-card {
+    padding: 15px;
+  }
+}
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  color: #333;
+  line-height: 1.8;
+  font-size: 1.1rem; /* Cỡ chữ cơ bản lớn hơn */
+}
+
+/* Header */
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}
+
+/* Section titles */
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+/* About section */
+.about p {
+  font-size: 1.3rem;
+}
+
+/* Room section */
+.room-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.room-title2 {
+  font-size: 1.5rem;
+}
+
+.room-features li {
+  font-size: 1.2rem;
+}
+
+/* Contact section */
+.contact p {
+  font-size: 1.25rem;
+}
+
+.contact i {
+  font-size: 1.3rem;
+}
+
+
+.room-title,
+.about p,
+.contact p {
+  transition: all 0.2s ease-in-out;
+}
+
+
+/*Extra*/
+.feature-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.feature-card {
+  background: #FFF;
+  padding: 25px;
+  border-radius: 15px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  background: #696969;
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.feature-card i {
+  font-size: 2rem;
+  color: #1976d2;
+  margin-bottom: 10px;
+}
+
+.feature-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #1976d2;
+}
+
+.feature-card p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Zalo contact*/
+.contact-hours {
+  display: flex;
+  flex-direction: column; /* xuống hàng */
+  align-items: center;     /* căn giữa theo chiều ngang */
+  gap: 8px;                /* khoảng cách giữa 2 dòng */
+  margin-top: 10px;
+}
+
+
+
+/* Dark mode theme */
+body {
+  background-color: #121212;  /* màu nền tối */
+  color: #f1f1f1;              /* màu chữ sáng */
+}
+
+header.hero,
+.about,
+.features,
+.rooms,
+.location,
+.contact {
+  background-color: #1e1e1e;   /* khối nền hơi sáng hơn body */
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+a, a:visited {
+  color: #4fc3f7; /* màu liên kết xanh sáng */
+}
+
+a:hover {
+  color: #81d4fa; /* khi hover */
+}
+
+.tick-icon,
+.tick {
+  color: #4caf50; /* màu xanh lá dễ nhìn */
+}
+
+footer {
+  background-color: #0d47a1;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.feature-card:hover {
+  background-color: #2c2c2c;
+  transition: background-color 0.3s;
+}
+
+
+/* Di chuyển ảnh*/
+.photo-slider {
+  padding: 30px;
+  background-color: #1c1c1c;
+  color: white;
+  text-align: center;
+}
+
+.swiper {
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.photo-slider {
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px; /* hoặc chiều cao bạn mong muốn */
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f4;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Giúp ảnh bao phủ đều khung */
+  border-radius: 10px;
+}
+
+
+body {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.feature-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+
+
+/*Nút zalo*/
+.zalo-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #0084ff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 25px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.zalo-btn:hover {
+  background: #006edc;
+}
+
+/*Make color cho header*/
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(270deg, #c300ff, #5c33ff, #00ffcc, #88ff00);
+  background-size: 800% 800%; 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbowText 6s linear infinite;
+  text-align: center;
+}
+
+@keyframes rainbowText {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
