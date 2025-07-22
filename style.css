@@ -7,15 +7,32 @@
 }
 
 body {
-  background: #f4f6f8;
-  color: #333;
-  line-height: 1.6;
-  font-size: 1.1rem;
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 15px;
-  transition: background-color 0.5s, color 0.5s;
+  background-color: #0f0f0f;
+  color: #e0e0e0;
+  padding: 20px;
+  min-height: 100vh;
 }
+
+
+/* Gradient chuyển động */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Khung nội dung chính */
+.about {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0,255,255,0.2);
+  backdrop-filter: blur(5px);
+}
+
+
 
 /* Header Hero */
 .hero {
@@ -74,18 +91,50 @@ section h2 {
 }
 
 /* About */
-.about p {
+.about {
+  padding: 20px;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.feature-line {
+  display: flex;
+  align-items: flex-start; /* giữ dấu tick và chữ thẳng hàng trên cùng */
   font-size: 1.2rem;
   margin: 10px 0;
-  padding-left: 20px;
-  margin-bottom: 5%;
-  text-align: center;
+  line-height: 1.4;
+  gap: 10px; /* khoảng cách giữa icon và chữ */
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .tick-icon {
-  color: green;
-  margin-right: 10px;
+  color: #00ef87;
+  margin-right: 12px;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  margin-top: 4px;
+  text-shadow: 0 0 5px #bb00ef, 0 0 10px #00adef;
 }
+
+/* Responsive cho màn hình nhỏ hơn 600px */
+@media screen and (max-width: 600px) {
+  .about p {
+    font-size: 1rem;
+    text-align: left;
+    padding-left: 0;
+  }
+
+  .about h2 {
+    font-size: 1.5rem;
+  }
+}
+
 
 /* Features */
 .feature-blocks {
@@ -389,4 +438,11 @@ footer {
   a {
     color: #90caf9;
   }
+}
+
+.about p:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 5px;
+  transition: 0.3s;
 }
